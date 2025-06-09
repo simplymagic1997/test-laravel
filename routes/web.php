@@ -7,6 +7,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/php', function () {
+    return view('phpInfo');
+});
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
